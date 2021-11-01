@@ -74,12 +74,13 @@
                 Early Scottish golf courses were primarily laid out on links land, soil-covered sand dunes directly inland from beaches. The word "links" derives from the Scots language and the Old English word hlinc ("rising ground, ridge"): traditionally these are coastal sand dunes but sometimes open parkland. This gave rise to the term "golf links", particularly applied to seaside courses and those built on naturally sandy soil inland. <br>
                 The first 18-hole golf course in the United States was on a sheep farm in Downers Grove, Illinois, in 1892. The course is still there today.    
               </p>
-            <figure>
-                <center>
-                <img src="./images/4.jpg" width="600px" height="400px" alt="golf-courses">
-                <img src="./images/5.webp" width="600px" height="400px" alt="golf-courses">
-                <figcaption>Golf Course</figcaption>
-            </figure>
+              <!-- the center tag has been closed after figure so it should be opened before it  -->
+            <center>
+                <figure>
+                    <img src="./images/4.jpg" width="600px" height="400px" alt="golf-courses">
+                    <img src="./images/5.webp" width="600px" height="400px" alt="golf-courses">
+                    <figcaption>Golf Course</figcaption>
+                </figure>
             </center>
         
             <hr>
@@ -122,9 +123,12 @@
             <table border="2px">
                
                  <thead>
-                     <th>Country</th>
-                     <th>Number of Courses</th>
-                     <th>%</th> 
+                     <!-- inside a thead element you should use a tr then inside the tr you should use your th... -->
+                     <tr>
+                         <th>Country</th>
+                         <th>Number of Courses</th>
+                         <th>%</th> 
+                     </tr>
                  </thead>
                  <tbody>
                      <tr>
@@ -254,6 +258,8 @@
              <br>
               <form action="https://www.google.com/search">
                    <label for="search">Search google</label>
+                   
+                   <!-- the id attribute must be unique so you have used it twice... -->
                    <input type="search" id="search" placeholder="Search">
                    <button>Search</button>
               </form>
